@@ -1,0 +1,1 @@
+const lyric_API = 'https://api.lyrics.ovh/v1/';
