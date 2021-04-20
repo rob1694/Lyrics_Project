@@ -2,11 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./styles.css">
     <script type="text/javascript" src="./index.js"></script>
     <title>Lyric Finder</title>
 </head>
 <body>
-    
+    <h1 id = 'greeting'>Welcome to Lyrics Finder</h1>
+        <p>Here you must enter both a valid Artist name and Song title.</p>
+
+    <form id = 'lyric-search' >
+        <input type="text" placeholder='Artist'/>
+        <input type="text" placeholder='Song'/>
+        <button>Search</button>
+    </form>
+
+    <div id = "show-lyrics"></div>
+
+    <form id = "comments">
+        <input class="comment-control" type="text" placeholder='Comment Section'/>
+        <button>Submit</button>
+    </form>
+
 </body>
 </html>
