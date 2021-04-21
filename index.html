@@ -6,17 +6,21 @@
     <script type="text/javascript" src="./index.js"></script>
     <title>Lyric Finder</title>
 </head>
-<body>
+<body id = 'Container'>
     <h1 id = 'greeting'>Welcome to Lyrics Finder</h1>
-        <p>Here you must enter both a valid Artist name and Song title.</p>
-
+        <p>Here you must enter both a valid Artist name and Song title.
+            Example: Nirvana, Come As You Are
+        </p>
+            
     <form id = 'lyric-search' >
         <input type="text" placeholder='Artist'/>
         <input type="text" placeholder='Song'/>
         <button>Search</button>
     </form>
 
-    <div id = "show-lyrics"></div>
+    <div id = "show-lyrics">
+        <h2>Song Title</h2>
+    </div>
 
     <form id = "comments">
         <input class="comment-control" type="text" placeholder='Comment Section'/>
