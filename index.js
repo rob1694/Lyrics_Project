@@ -1,7 +1,19 @@
 const lyric_API = 'https://api.lyrics.ovh/v1/';
+let artist = 'Nirvana', song = 'Come as You Are';
 
 document.addEventListener("DOMContentLoaded", function() {
-    getLyrics('Nirvana', 'Come as You Are').then(displayExample)
+    getLyrics(artist, song)
+        .then(displayLyrics)
+        const searchbtn = document.getElementById('Search-btn');
+             searchbtn.addEventListener("click", (e) =>{
+            e.preventDefault();
+            const searchInfoA = getSearchInfoArtist(),
+            searchInfoS = getSearchInfoSong();
+            clearLyrics()
+            getLyrics(searchInfoA, searchInfoS)
+            .then(displayLyrics)
+            clearSearchInfo()
+        })
 })
 
 function getLyrics(artist, song){
@@ -31,8 +43,7 @@ function createElements(lyricsOBJ, artist, song) {
 }
 
 /* On page load displayExample */
-function displayExample(lyricsOBJ) {
-    let artist = 'Nirvana', song = 'Come as You Are';
+function displayLyrics(lyricsOBJ) {
     const lyricsBar = document.getElementById("show-lyrics"),
     lyricsdiv = createElements(lyricsOBJ, artist, song);
     
@@ -45,9 +56,27 @@ function clearLyrics() {
     document.getElementById("show-lyrics").innerHTML = "";
 }
 
-/* ShowLyrics funtion that displays example Lyrics then clears existing Lyrics then appends new lyrics.
+function clearSearchInfo() {
+    document.querySelector("#lyric-search").reset();
+  }
+
+/*clears existing Lyrics then appends new lyrics.
     clear lyrics bar
     adds new lyrics and song based on enter
 */
 
+function getSearchInfoArtist() {
+    let artistInput = document.querySelector('.Artist-input')
 
+        artist = artistInput.value
+
+        return artist;
+    }
+
+function getSearchInfoSong() {
+        let songInput = document.querySelector('.Song-input');
+    
+            song = songInput.value
+    
+            return song;
+        }
