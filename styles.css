@@ -1,0 +1,29 @@
+body{ background: url(https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    text-align: center;
+}
+
+#greeting {
+    text-decoration: underline ;
+    text-decoration-style: double;
+    font-size: 32pt;
+    color: lightcyan;
+}
+
+.explain, .example {
+    color: lightcyan;
+    font-size: 14pt;
+}
+
+#show-lyrics {
+margin-left: 20%;
+margin-right: 20%;
+font-size: 16pt;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+background-color: lightskyblue;
+opacity: 0.65;
+color: darkblue;
+}
+
+#Search-btn {
+     background-color: darkcyan;
+}
