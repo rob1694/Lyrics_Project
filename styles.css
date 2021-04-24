@@ -22,8 +22,22 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 background-color: rgb(68, 122, 158);
 opacity: 0.65;
 color: rgb(6, 6, 46);
+border-style: solid;
+border-color: midnightblue;
 }
 
 #Search-btn {
      background-color: rgb(5, 177, 177);
+}
+
+#comments-section {
+    background-color: rgb(223, 222, 219);
+    opacity: 0.65;
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-style: solid;
+    border-color: rgb(104, 104, 30);
+    font-size: 16pt;
+    font-weight: bold;
 }

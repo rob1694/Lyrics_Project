@@ -85,8 +85,9 @@ function createComment(comments) {
     const section = document.getElementById('comments-section')
     const comment = document.createElement('p'),
     div = document.createElement('div')
-
+    let colors = ['#131463', '#631318', '#25572c'];
     comment.textContent = comments
+    comment.style.color = colors[Math.floor(Math.random() * colors.length)];
 
     section.appendChild(div)
     div.appendChild(comment)
