@@ -15,8 +15,8 @@ body{ background: url(https://images.unsplash.com/photo-1508700115892-45ecd05ae2
 }
 
 #show-lyrics {
-margin-left: 20%;
-margin-right: 20%;
+margin-left: 30%;
+margin-right: 30%;
 font-size: 16pt;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 background-color: rgb(68, 122, 158);
@@ -40,4 +40,19 @@ border-color: midnightblue;
     border-color: rgb(104, 104, 30);
     font-size: 16pt;
     font-weight: bold;
+}
+
+p {
+    border-style: double ;
+    border-color: black;
+    margin: 5%;
+    padding:10mm;
+}
+
+.comment-control {
+width: 60%;
+margin-left: 5%;
+margin-top: 5%;
+margin-bottom: 2%;
+padding: 12px;
 }

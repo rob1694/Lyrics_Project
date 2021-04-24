@@ -17,15 +17,15 @@ function createElements(lyricsOBJ, artist, song) {
     const div = document.createElement('div'),
     h2 = document.createElement('h2'),
     h3 = document.createElement('h3'),
-    p = document.createElement('p');
+    span = document.createElement('span');
 
     h2.textContent = artist;
     h3.textContent = song;
-    p.textContent = lyricsOBJ.lyrics;
+    span.textContent = lyricsOBJ.lyrics;
 
     div.appendChild(h2);
     div.appendChild(h3)
-    div.appendChild(p);
+    div.appendChild(span);
 
     return div
 }
@@ -73,13 +73,6 @@ function replaceLyrics(){
             clearSearchInfo()
 })
 }
-
-/*
-create p tag with comment input
-append p tag on click
-add event listener that displays comment
-reset comment form after click
-*/
 
 function createComment(comments) {
     const section = document.getElementById('comments-section')
