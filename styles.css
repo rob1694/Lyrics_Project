@@ -41,21 +41,21 @@ border-color: midnightblue;
     border-color: rgb(104, 104, 30);
     font-size: 16pt;
     font-weight: bold;
+    word-wrap: break-word;
 }
 
 p {
     border-style: double ;
     border-color: black;
-    margin: 5%;
-    padding:10mm;
-    display: flexbox;
-    flex-wrap: wrap;
+    margin: 2%;
+    padding:5mm;
+    font-size: 13pt;
 }
 
 .comment-control {
 width: 60%;
-margin-left: 5%;
-margin-top: 5%;
+margin-left: 2%;
+margin-top: 2%;
 margin-bottom: 2%;
-padding: 12px;
+padding: 16px;
 }
